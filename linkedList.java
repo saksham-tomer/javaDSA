@@ -46,4 +46,15 @@ class MylinkedList{
         }
         return sb.toString();
     }
+    public void reverse(){
+        Node prev = null;
+        Node current = head;
+        Node next = head.next;
+        while(next != null){
+            current.next = prev;
+            prev = current;
+            current = next;
+            next = next.next;
+        }
+    }
 }
