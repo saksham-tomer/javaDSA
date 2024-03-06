@@ -1,0 +1,6 @@
+the thing that allowed ubuntu to be installed was using the --web-download flag in the wsl as windows store was the default where the binaries were pulled
+
+ & "C:\Program Files\Docker\Docker\resources\com.docker.diagnose.exe" check
+
+
+ ---> this is the diagnosting File for docker
