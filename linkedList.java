@@ -150,6 +150,35 @@ class MylinkedList{
 }
 
 
+public void printRec(Node head){
+    if(head == null) return;
+
+    printRec(head.next);
+    System.out.print(head.data + "-->");
+}
+
+ public Node reverseRec(Node head){
+    if(head == null || head.next == null) return head; 
+    Node rest = reverseRec(head.next);
+
+    Node next = head.next;
+    next.next = head;
+    head.next = null;
+
+    return rest;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
